@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="images\logo1.ico">
+		<link rel="stylesheet" type="text/css" href="style\reset.css">
+		<link rel="stylesheet" type="text/css" href="style\slider.css">
+		<link rel="stylesheet" type="text/css" href="style\style.css">
+		<link rel="stylesheet" type="text/css" href="style\animate.css">
+		<link rel="stylesheet" type="text/css" href="fonts\fonts.css">
+		<link rel="stylesheet" href="style/owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="style/owlcarousel/owl.theme.default.css">
+		<script src="script/jquery-3.1.1.min.js"></script>
+		<script src="script/owl.carousel.min.js"></script>
+		<title>O.P.Game</title>
+		<meta charset = "utf-8">
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		    (function (d, w, c) {
+		        (w[c] = w[c] || []).push(function() {
+		            try {
+		                w.yaCounter44565377 = new Ya.Metrika({
+		                    id:44565377,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true
+		                });
+		            } catch(e) { }
+		        });
+
+		        var n = d.getElementsByTagName("script")[0],
+		            s = d.createElement("script"),
+		            f = function () { n.parentNode.insertBefore(s, n); };
+		        s.type = "text/javascript";
+		        s.async = true;
+		        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		        if (w.opera == "[object Opera]") {
+		            d.addEventListener("DOMContentLoaded", f, false);
+		        } else { f(); }
+		    })(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/44565377" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<div class="background2"></div>
+		<div class="main">
+		<header>
+			<div class="wrapper">
+				<div class="owl-carousel owl-theme">
+					<div class="item"><img src="images/slide1.jpg" alt></div>
+					<div class="item"><img src="images/slide2.jpg" alt></div>
+					<div class="item"><img src="images/slide3.jpg" alt></div>
+					<div class="item"><img src="images/slide4.jpg" alt></div>
+					<div class="item"><img src="images/slide5.jpg" alt></div>
+				</div>
+				<div class="controls">
+					<label></label>
+					<label></label>
+					<label></label>
+					<label></label>
+					<label></label>
+				</div>
+				<script>
+					$('.owl-carousel').owlCarousel(
+					{
+						loop:true,
+						autoplay:true,
+						items:1,
+						autoWidth:true,
+						dotsContainer: '.controls',
+						animateIn: 'fadeIn',
+						animateOut: 'fadeOut'
+					});
+					$('.controls label').click(function () 
+					{
+						$('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+					});
+				</script>
+			</div>
+			<div class="logo"><img src="images/logo.png" width="200px" height="150px"></div>
+		</header>
+		<!--<nav class="skew">
+			<p class="parallelogram">
+			<table>
+				<tr>
+					<td><a href="#">Главная</a></td>
+					<td><a href="#">Новости</a></td>
+					<td><a href="#">Видео</a></td>
+					<td><a href="#">Игры</a></td>
+					<td><a href="#">Арт</a></td>
+					<td><a href="#">Контакты</a></td>
+				</tr>
+			</table>
+			</p>
+		</nav>-->
+		<div class="wrap">
+			<div class="content">
+				<div class="massage1" id="_15">
+					<h2>O.P. Games Studio</h2>
+					<img src="images/logo4.jpg" width="400px" height="250px">
+					<p>Это молодая студия состоящая чуть больше чем из 2х человек.
+					Суть этой студии - воплотить нашу давнюю мечту, а именно создать хоть какую то игру своими руками. Всегда считал программирование сродни волшебству, заставлять двигаться, "жить" - неодушевлённые объекты, было моей мечтой ещё со школьных времён, когда у меня была "Dendy" - но тогда и до недавнего времени я не представлял это возможным... Программирование всегда нам представлялось невероятно сложным и совершенно непонятным делом. Даже не смотря на 2 семестра информатики в институте, они прошли по принципу - сдал? Забыл! Проходили мы сначала Paskal, потом Delphi. И лишь недавно у меня появилось достаточно свободного времени и решимости для самостоятельного изучения программирования. Как среду разработки после долгих поисков я решил взять Game Maker. Сначала версия 8.0 потом 8.1 и теперь я перешёл на последнюю Studio.
+					</p>
+				</div>
+				<div class="image">
+					<img src="images/GIV-1.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage2" id="_15">
+					<img src="images/greenlight.jpg" width="400px" height="200px">
+					<p>2й человек в нашей маленькой команде, так же никогда не занимался этим ранее, на него возлегло самое сложное это рисовка, 1й раз прочитав и увидев что такое Пиксель арт, он очень заинтересовался, пришлось осваивать эту технику с нуля, совершенствование её происходит до сих пор. Пробовали разные программы но остановились но обычном Паинте.
+					Идея этой игры сделать всё самим, так что рисовать придётся много.
+					Итак подытожим. Суть этой студии - это эксперимент, могут ли 2 совершенно не разбирающихся в этом человека создать полностью свою игру используя имеющиеся технологии такие как среда разработки, форумы и разные уроки.
+					</p>
+				</div>
+				<div class="image">
+					<img src="images/GIV-2.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage3" id="_15">
+					<img class="img" src="images/photo2.png" width="180px" height="200px">
+					<p>Вам предстоит начать своё нелёгкое путешествие в роли космического липрикона!<br>Ваши патроны это цвета радуги.<br>В начале игры у вас будут 2 пули случано подобранного цвета.<br>При попадании в цветной шарик вы получите 2 очка цвета шарика и потратите 1 текущего цвета.<br>Шарик можно сбить любым цветом из имеющихся.<br>Выбор цвета производится кнопками 1-7.<br>Пробел - выстрел.<br>Cтрелки Вверх, Вниз - перемещение.<br>Что бы попасть в магазин нужно набрать 10 единиц всех цветов, после прохождения магазина, у вас останется только 2 пули случано подобранного цвета."
+					</p>
+					<img class="img2" src="images/photo.png" width="180px" height="180px">
+				</div>
+				<div class="image">
+					<img src="images/GIV-3.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage1" id="_15">
+					<img src="images/Dima.png" width="180px" height="180px">
+					<p>Рад сообщить вам, что музыкальное сопровождение, для нашей игры согласился предоставить Дмитрий Капетий. Я очень рад, что в нашей игре примет участие, такой творчиский челвоек. Многолетний опыт в создании музыки позволит передать, ещё больше атмосферы и настроения нашей игре. Музыка один из главных компонетов хорошего геймплея, и я очень рад, что мы общими усилиями сможем вдохнуть в наше общее творчество, ещё капельку жизни.
+					_________________________________________________________________________________________________________________________<br><br>
+					&#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835; &#9836; &#9834; | &#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835; &#9836; &#9834; | &#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835;<br>
+					_________________________________________________________________________________________________________________________<br><br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			&copy; 2017 03 21  Все права защищены. 
+				Запрещено использование материалов сайта без согласия его авторов и обратной ссылки. 
+				Разработчики сайта и дизайнеры а так же авторы текстов и обладательи всех прав: 
+				Lomovskoy Kirill. 
+				Lomovskaya Viktoryia.
+		</footer>
+	</div>
+	</body>
+</html>
+========================================================================================================================<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="images\logo1.ico">
+		<link rel="stylesheet" type="text/css" href="style\reset.css">
+		<link rel="stylesheet" type="text/css" href="style\slider.css">
+		<link rel="stylesheet" type="text/css" href="style\style.css">
+		<link rel="stylesheet" type="text/css" href="style\animate.css">
+		<link rel="stylesheet" type="text/css" href="fonts\fonts.css">
+		<link rel="stylesheet" href="style/owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="style/owlcarousel/owl.theme.default.css">
+		<script src="script/jquery-3.1.1.min.js"></script>
+		<script src="script/owl.carousel.min.js"></script>
+		<title>O.P.Game</title>
+		<meta charset = "utf-8">
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		    (function (d, w, c) {
+		        (w[c] = w[c] || []).push(function() {
+		            try {
+		                w.yaCounter44565377 = new Ya.Metrika({
+		                    id:44565377,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true
+		                });
+		            } catch(e) { }
+		        });
+
+		        var n = d.getElementsByTagName("script")[0],
+		            s = d.createElement("script"),
+		            f = function () { n.parentNode.insertBefore(s, n); };
+		        s.type = "text/javascript";
+		        s.async = true;
+		        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		        if (w.opera == "[object Opera]") {
+		            d.addEventListener("DOMContentLoaded", f, false);
+		        } else { f(); }
+		    })(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/44565377" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<div class="background2"></div>
+		<div class="main">
+		<header>
+			<div class="wrapper">
+				<div class="owl-carousel owl-theme">
+					<div class="item"><img src="images/slide1.jpg" alt></div>
+					<div class="item"><img src="images/slide2.jpg" alt></div>
+					<div class="item"><img src="images/slide3.jpg" alt></div>
+					<div class="item"><img src="images/slide4.jpg" alt></div>
+					<div class="item"><img src="images/slide5.jpg" alt></div>
+				</div>
+				<div class="controls">
+					<label></label>
+					<label></label>
+					<label></label>
+					<label></label>
+					<label></label>
+				</div>
+				<script>
+					$('.owl-carousel').owlCarousel(
+					{
+						loop:true,
+						autoplay:true,
+						items:1,
+						autoWidth:true,
+						dotsContainer: '.controls',
+						animateIn: 'fadeIn',
+						animateOut: 'fadeOut'
+					});
+					$('.controls label').click(function () 
+					{
+						$('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+					});
+				</script>
+			</div>
+			<div class="logo"><img src="images/logo.png" width="200px" height="150px"></div>
+		</header>
+		<!--<nav class="skew">
+			<p class="parallelogram">
+			<table>
+				<tr>
+					<td><a href="#">Главная</a></td>
+					<td><a href="#">Новости</a></td>
+					<td><a href="#">Видео</a></td>
+					<td><a href="#">Игры</a></td>
+					<td><a href="#">Арт</a></td>
+					<td><a href="#">Контакты</a></td>
+				</tr>
+			</table>
+			</p>
+		</nav>-->
+		<div class="wrap">
+			<div class="content">
+				<div class="massage1" id="_15">
+					<h2>O.P. Games Studio</h2>
+					<img src="images/logo4.jpg" width="400px" height="250px">
+					<p>Это молодая студия состоящая чуть больше чем из 2х человек.
+					Суть этой студии - воплотить нашу давнюю мечту, а именно создать хоть какую то игру своими руками. Всегда считал программирование сродни волшебству, заставлять двигаться, "жить" - неодушевлённые объекты, было моей мечтой ещё со школьных времён, когда у меня была "Dendy" - но тогда и до недавнего времени я не представлял это возможным... Программирование всегда нам представлялось невероятно сложным и совершенно непонятным делом. Даже не смотря на 2 семестра информатики в институте, они прошли по принципу - сдал? Забыл! Проходили мы сначала Paskal, потом Delphi. И лишь недавно у меня появилось достаточно свободного времени и решимости для самостоятельного изучения программирования. Как среду разработки после долгих поисков я решил взять Game Maker. Сначала версия 8.0 потом 8.1 и теперь я перешёл на последнюю Studio.
+					</p>
+				</div>
+				<div class="image">
+					<img src="images/GIV-1.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage2" id="_15">
+					<img src="images/greenlight.jpg" width="400px" height="200px">
+					<p>2й человек в нашей маленькой команде, так же никогда не занимался этим ранее, на него возлегло самое сложное это рисовка, 1й раз прочитав и увидев что такое Пиксель арт, он очень заинтересовался, пришлось осваивать эту технику с нуля, совершенствование её происходит до сих пор. Пробовали разные программы но остановились но обычном Паинте.
+					Идея этой игры сделать всё самим, так что рисовать придётся много.
+					Итак подытожим. Суть этой студии - это эксперимент, могут ли 2 совершенно не разбирающихся в этом человека создать полностью свою игру используя имеющиеся технологии такие как среда разработки, форумы и разные уроки.
+					</p>
+				</div>
+				<div class="image">
+					<img src="images/GIV-2.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage3" id="_15">
+					<img class="img" src="images/photo2.png" width="180px" height="200px">
+					<p>Вам предстоит начать своё нелёгкое путешествие в роли космического липрикона!<br>Ваши патроны это цвета радуги.<br>В начале игры у вас будут 2 пули случано подобранного цвета.<br>При попадании в цветной шарик вы получите 2 очка цвета шарика и потратите 1 текущего цвета.<br>Шарик можно сбить любым цветом из имеющихся.<br>Выбор цвета производится кнопками 1-7.<br>Пробел - выстрел.<br>Cтрелки Вверх, Вниз - перемещение.<br>Что бы попасть в магазин нужно набрать 10 единиц всех цветов, после прохождения магазина, у вас останется только 2 пули случано подобранного цвета."
+					</p>
+					<img class="img2" src="images/photo.png" width="180px" height="180px">
+				</div>
+				<div class="image">
+					<img src="images/GIV-3.gif" width="1200px" height="440px">
+				</div>
+				<div class="massage1" id="_15">
+					<img src="images/Dima.png" width="180px" height="180px">
+					<p>Рад сообщить вам, что музыкальное сопровождение, для нашей игры согласился предоставить Дмитрий Капетий. Я очень рад, что в нашей игре примет участие, такой творчиский челвоек. Многолетний опыт в создании музыки позволит передать, ещё больше атмосферы и настроения нашей игре. Музыка один из главных компонетов хорошего геймплея, и я очень рад, что мы общими усилиями сможем вдохнуть в наше общее творчество, ещё капельку жизни.
+					_________________________________________________________________________________________________________________________<br><br>
+					&#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835; &#9836; &#9834; | &#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835; &#9836; &#9834; | &#9833;&#9833;&#9833;&#9836; | &#9834; &#9835; &#9836; | ♯ &#9835; &#9835; &#9833; &#9833; | ♮ &#9837; &#9833; &#9835; &#9835;<br>
+					_________________________________________________________________________________________________________________________<br><br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			&copy; 2017 03 21  Все права защищены. 
+				Запрещено использование материалов сайта без согласия его авторов и обратной ссылки. 
+				Разработчики сайта и дизайнеры а так же авторы текстов и обладательи всех прав: 
+				Lomovskoy Kirill. 
+				Lomovskaya Viktoryia.
+		</footer>
+	</div>
+	</body>
+</html>
+==================================================================================================================================
