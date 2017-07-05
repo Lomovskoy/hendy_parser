@@ -41,6 +41,29 @@ class Save_or_Answer():#Этот класс отвечает за сохране
                 print('='*37+'Печать'+'='*37)
                 for i in self.inform:# Заголовки ответа
                     print(i,' - ',self.inform[i])
-                
             else:
                 print('='*37+'Отмена'+'='*37)
+        elif self.choice == 3:
+            if self.saveOk == 1:
+                directory = 'save'
+                file = 'save_tytle_atribut.txt'
+                print('='*35+'Сохранение'+'='*35)
+                f = open(directory + '/' + file, 'a', encoding='utf-8')
+                line = '='*130
+
+                str_inform = '\n'.join(self.inform)
+                '''for i in self.inform:# Заголовки ответа
+                    str_inform += self.inform[i]'''
+                    
+                f.write(str_inform+'\n'+line)
+                f.close()
+                print('\tИнформация сохранена в папку '+directory+' в файл '+file)
+            elif self.saveOk == 2:
+                print('='*37+'Печать'+'='*37)
+                print('\n'.join(self.inform))
+            else:
+                print('='*37+'Отмена'+'='*37)
+        elif self.choice == 4:
+            print('='*35+'Сохранение'+'='*35)
+            print('\t' + self.inform[2] + ' в папку ' + self.inform[0] + ' подпапку ' + self.inform[1])
+            

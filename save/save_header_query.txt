@@ -1,9 +1,0 @@
-Server - nginx/1.11.7
-Date - Tue, 04 Jul 2017 18:54:37 GMT
-Content-Type - text/html; charset=UTF-8
-Transfer-Encoding - chunked
-Connection - keep-alive
-Content-Encoding - gzip
-Status - 200
-
-==================================================================================================================================
